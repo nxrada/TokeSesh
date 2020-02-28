@@ -4,7 +4,6 @@ var gameData = {
     budPerClickCost: 10,
     debt: 0,
     debtAccumulationFactor: 1,
-    lastTick: Date.now()
     }
     
     function takeAToke() {
