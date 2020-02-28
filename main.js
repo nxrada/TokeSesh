@@ -6,7 +6,7 @@ var gameData = {
     }
     
     function takeAToke() {
-    gameData.stone += gameData.budPerClickCost
+    gameData.tokes += gameData.tokesPerClick
     document.getElementById("tokesTaken").innerHTML = gameData.tokes + " Tokes"
     }
     
