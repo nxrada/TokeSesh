@@ -19,10 +19,6 @@ var gameData = {
     }
     }
     
-    var mainGameLoop = window.setInterval(function() {
-    takeAToke()
-    }, 1000)
-    
     var saveGameLoop = window.setInterval(function() {
     localStorage.setItem('tokeSeshSave', JSON.stringify(gameData))
     }, 15000)
