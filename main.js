@@ -22,7 +22,7 @@ var gameData = {
     }
    
     function debtAccumulation() {
-        gameData.debt += gameData.debtAccumulationFactor
+        gameData.debt ++
         document.getElementById("debtCount").innerHTML = "Current debt: $" + gameData.debt
     }
     var debtLoop = window.setInterval(function() {
