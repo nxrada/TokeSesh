@@ -5,11 +5,16 @@
 <title>Toke Sesh</title>
     </head>
     <body>
-        <h1 id="tokesTaken">Tokes: 0</h1>
-        <p id="debt">Debt: $0.00</p>
-        <button onclick="takeAToke()">Take a Toke</button>
-        <button onclick="buyBudPerClick()" id="perClickUpgrade">Make it Fatter!</button>
-        <p id="budCostTracker">(Currently 1 gram; Cost: $10)</p>
+        <div id="TokeCount">
+            <h2 id="tokesTaken">Tokes: 0</h2>
+            <button onclick="takeAToke()">Take a Toke</button>
+        </div>
+        <br>
+        <div id="Debt"; class="column">
+            <b>Debt</b>
+            <hr>
+            <p id="debtCount">Current debt: $0</p>
+        </div>
         <script src="main.js" ;charset="utf-8"></script>
 </body>
 </html>

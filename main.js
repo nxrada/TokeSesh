@@ -3,6 +3,8 @@ var gameData = {
     tokesPerClick: 1,
     budPerClickCost: 10,
     debt: 0,
+    debtAccumulationFactor: 1,
+    lastTick: Date.now()
     }
     
     function takeAToke() {
@@ -19,6 +21,13 @@ var gameData = {
     }
     }
    
+    function debtAccumulation() {
+        gameData.debt += gameData.debtAccumulationFactor
+        document.getElementById("debtCount").innerHTML = "Current debt: $" + gameData.debt
+    }
+    var debtLoop = window.setInterval(function() {
+        debtAccumulation()
+        }, 10000)
     
     
     var saveGameLoop = window.setInterval(function() {
