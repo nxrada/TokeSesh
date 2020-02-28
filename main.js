@@ -2,12 +2,12 @@ var gameData = {
     tokes: 0,
     tokesPerClick: 1,
     budPerClickCost: 10,
-    dinero: 0,
+    debt: 0,
     }
     
     function takeAToke() {
     gameData.tokes += 1
-    document.getElementById("tokesTaken").innerHTML = gameData.tokes + " Tokes"
+    document.getElementById("tokesTaken").innerHTML = "Tokes: " + gameData.tokes 
     }
     
     function buyBudPerClick() {
@@ -18,6 +18,8 @@ var gameData = {
     document.getElementById("budCostTracker").innerHTML = "(Currently " + gameData.tokesPerClick + "grams; Cost: $" + gameData.budPerClickCost + ")"
     }
     }
+   
+    
     
     var saveGameLoop = window.setInterval(function() {
     localStorage.setItem('tokeSeshSave', JSON.stringify(gameData))
