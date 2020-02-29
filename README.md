@@ -1,3 +1,3 @@
 # Toke Sesh, a game by nxrada
 - Work in progress
-- Hosted a: nxrada.github.io/TokeSesh/
+- Hosted at: nxrada.github.io/TokeSesh/
