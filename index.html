@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
-<meta charset="utf-8">
-<title>Toke Sesh</title>
+        <meta charset="utf-8">
+        <title>Toke Sesh</title>
     </head>
     <body>
-        <div id="TokeCount">
+        <div id="tokeCount">
             <h2 id="tokesTaken">Tokes: 0</h2>
-            <button onclick="takeAToke()">Take a Toke</button>
+            <button onclick="takeAToke()">Take a Toke</button> <button onclick="rollOne()">Roll</button>
+            <p id="tokesRemaining"></p>
+            <p id="jointCounter">Joints: 0</p>
+            <p id="goldJointCounter">Golden J's: 1</p>
+
         </div>
         <br>
-        <div id="Debt"; class="column">
-            <b>Debt</b>
+        <div id="fiancances"; class="column">
+            <b>Fiancances</b>
             <hr>
+            <button onclick="buyBud()"></button>
             <p id="debtCount">Current debt: $0</p>
         </div>
-        <script src="main.js" ;charset="utf-8"></script>
+        <script src="main.js"; charset="utf-8"></script>
 </body>
 </html>

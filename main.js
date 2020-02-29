@@ -1,39 +1,67 @@
-var gameData = {
-    tokes: 0,
-    tokesPerClick: 1,
-    budPerClickCost: 10,
-    debt: 0,
-    debtAccumulationFactor: 1,
+var gameData = 
+    {
+        tokes: 0,
+        tokesRemaining: 64,
+        tokesPerClick: 1,
+        budPerClickCost: 10,
+        debt: 0,
+        debtAccumulationFactor: 1,
+        budLeft: 0,
+        goldJoints: 1,
+        joints: 0,
     }
-    
-    function takeAToke() {
-    gameData.tokes += 1
-    document.getElementById("tokesTaken").innerHTML = "Tokes: " + gameData.tokes 
-    }
-    
-    function buyBudPerClick() {
-    if (gameData.dinero >= gameData.budPerClickCost) {
-    gameData.tokes -= gameData.budPerClickCost
-    gameData.budPerClick += 1
-    gameData.budPerClick *= 2
-    document.getElementById("budCostTracker").innerHTML = "(Currently " + gameData.tokesPerClick + "grams; Cost: $" + gameData.budPerClickCost + ")"
-    }
-    }
-   
-    function debtAccumulation() {
-        gameData.debt ++
-        document.getElementById("debtCount").innerHTML = "Current debt: $" + gameData.debt
-    }
-    var debtLoop = window.setInterval(function() {
-        debtAccumulation()
-        }, 10000)
-    
-    
-    var saveGameLoop = window.setInterval(function() {
-    localStorage.setItem('tokeSeshSave', JSON.stringify(gameData))
-    }, 15000)
-    
-    var savegame = JSON.parse(localStorage.getItem("tokeSeshSave"))
-    if (savegame !== null) {
-    gameData = savegame
-    }
+//Declaration of gameData variables.
+
+function takeAToke() 
+{
+        gameData.tokes ++;
+        gameData.tokesRemaining --;
+        document.getElementById("tokesTaken").innerHTML = "Tokes: " + gameData.tokes; 
+}
+//Function which runs on "Take a Toke" button click.
+
+function rollOne();
+{
+    gameData.joints++;
+    gameData.budLeft--;
+    document.getElementById("jointCounter").innerHTML = "J's rolled: " + gameData.joints;
+}
+//Rolls a joint.
+
+function buyBud() 
+{
+        gameData.budPerClick += 1;
+        gameData.budPerClick *= 2;
+        budLeft += 28;
+        debt += 250;
+        document.getElementById("debtCount").innerHTML = "Current debt: $" + gameData.debt;
+}
+//Buys an ounce of bud.
+
+function debtAccumulation() 
+{
+    gameData.debt+= debtAccumulationFactor;
+    document.getElementById("debtCount").innerHTML = "Current debt: $" + gameData.debt;
+}
+//Function in which you accumulate debt.
+
+var debtLoop = window.setInterval(function() 
+{
+    debtAccumulation();
+}, 10000)
+//Debt loop.
+
+var saveGameLoop = window.setInterval(function() 
+{
+    localStorage.setItem('tokeSeshSave', JSON.stringify(gameData));
+}, 15000)
+//Savegame loop for saving the game
+
+var savegame = JSON.parse(localStorage.getItem("tokeSeshSave"))
+//Savegame variable.
+
+if (savegame !== null) 
+{
+    gameData = savegame;
+}
+//If statement that loads savegame. 
