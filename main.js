@@ -6,7 +6,6 @@ var gameData = {
         debt: 0,
         debtAccumulationFactor: 1,
         budLeft: 0,
-        goldJoints: 1,
         joints: 0,
     }
 //Declaration of gameData variables.
@@ -29,8 +28,8 @@ function rollOne() {
 function buyBud() {
         gameData.budPerClick += 1;
         gameData.budPerClick *= 2;
-        budLeft += 28;
-        debt += 250;
+        budLeft+= 28;
+        debt+= 250;
         document.getElementById("debtCount").innerHTML = "Current debt: " + gameData.debt +"dollars;
         document.getElementById("budCount").innerHTML = "Bud left: " + gameData.budLeft + "grams";
 }
