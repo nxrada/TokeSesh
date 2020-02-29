@@ -30,7 +30,7 @@ function buyBud() {
         gameData.budPerClick *= 2;
         budLeft+= 28;
         debt+= 250;
-        document.getElementById("debtCount").innerHTML = "Current debt: " + gameData.debt +"dollars;
+        document.getElementById("debtCount").innerHTML = "Current debt: " + gameData.debt +"dollars";
         document.getElementById("budCount").innerHTML = "Bud left: " + gameData.budLeft + "grams";
 }
 //Buys an ounce of bud.
