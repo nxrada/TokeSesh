@@ -5,29 +5,40 @@
         <title>Toke Sesh</title>
     </head>
     <body>
-        <div>
-            <img src="pothead.jpg" alt="Pothead"  width="300" height="300";>  
-        </div>
+        <style>
+            body {font-family:"Times New Roman", Times, serif; float: left;}
+             
+            
+        </style>
         <div id="counter">
-            <h1 id="tokesTaken">Tokes: 0</h1>
+            <h1>Tokes: <span id="tokesTaken">0</span></h1>
             <button id="takeAToke"; onclick="takeAToke()">Take a Toke</button> <button id="rollOne"; onclick="rollOne()">Roll</button>
             <p id="tokesRemaining"></p>
-            <p id="jointCounter">Joints: 0</p>
+            <p>Joints: <span id="jointCounter">0</span></p>
             <script src="main.js"; charset="utf-8"></script>
         </div>
         <br>
-        <div id="finanaces"; class="column">
+        <div id="finanaces">
             <b>Finances</b>
             <hr>
-            <p id="debtCount">Current debt: $0</p>
+            <p>Current wealth: $<span id="currentWealth">0</span></p>
             <script src="main.js"; charset="utf-8"></script>
         </div>
         <br>
         <div id="bud">
             <b>Bud</b>
             <hr>
-            <button onclick="buyBud()">Buy bud</button>
-            <p id="budCount">Bud left: 1g</p>
+            <button id="buyBud"; onclick="buyBud()">Buy eighth</button>
+            <p>Bud left: <span id="budCount">1</span>g</p>
+            <script src="main.js"; charset="utf-8"></script>
+        </div>
+        <br>
+        <div id="career">
+            <b>Career</b>
+            <hr>
+            <button id="findJob"; onclick="findJob()">Find a Job</button> <button id="workShift"; onclick="workShift()">Work a Shift</button>
+            <p id="jobTitleDisplay">Job title: <span id = "jobTitle"></span></p>
+            <p id="shiftsRemainingDisplay">Shifts 'till promotion: <span id="shiftsRemaining">60</span></p>
             <script src="main.js"; charset="utf-8"></script>
         </div>
         <script src="main.js"; charset="utf-8"></script>
