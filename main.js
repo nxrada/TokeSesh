@@ -60,11 +60,11 @@ function workShift() {
     gameData.wealth += gameData.salary;
     gameData.shiftsRemaining --;
     if (gameData.shiftsRemaining == 0) {
+        gameData.promotionTracker++;
         const randomJobTitle = jobTitles[Math.floor(Math.random() * jobTitles.length)];
         document.getElementById("jobTitle").innerHTML = randomJobTitle;
         gameData.shiftsRemaining = (60 * 2) * gameData.promotionTracker;
         document.getElementById("shiftsRemaining").innerHTML = gameData.shiftsRemaining.toString();
-        gameData.promotionTracker++;
     }
     document.getElementById("currentWealth").innerHTML = gameData.wealth.toString();
     document.getElementById("shiftsRemaining").innerHTML = gameData.shiftsRemaining.toString();
