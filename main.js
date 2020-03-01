@@ -30,9 +30,9 @@ function rollOne() {
 //Rolls a joint.
 
 function buyBud() {
-        gameData.debt += 250;
+        gameData.debt += 40;
         gameData.debt *= 2;
-        gameData.budLeft += 28;
+        gameData.budLeft += 3.5;
         document.getElementById("debtCount").innerHTML = "Current debt: $" + gameData.debt.toString();
         document.getElementById("budCount").innerHTML = "Bud left: " + gameData.budLeft.toString() + " g";
 }
@@ -55,14 +55,14 @@ var saveGameLoop = window.setInterval(function() {
 //Savegame loop for saving the game
 
 var buttonPermissionLoop = window.setInterval(function() {
-    if (gameData.joints <= 0){
+    if (gameData.joints < 1){
         document.getElementById("takeAToke").setAttribute("disabled","disabled");
     }
     //Diables the ability to take a toke if you have no joints.
     if (gameData.joints >= 1) {
         document.getElementById("takeAToke").removeAttribute("disabled");
     }
-    if (gameData.budLeft <= 0){
+    if (gameData.budLeft < 1){
         document.getElementById("rollOne").setAttribute("disabled","disabled");
     }
         //Disables the ability to roll if you have no bud.
@@ -74,6 +74,8 @@ var buttonPermissionLoop = window.setInterval(function() {
 
 function autoToker(){
     
+    takeAToke();
+
 }
 var savegame = JSON.parse(localStorage.getItem("tokeSeshSave"))
 //Savegame variable.
