@@ -7,6 +7,7 @@ var gameData = {
         joints: 0,
         shiftsRemaining: 60,
         salary: 15,
+        promotionTracker: 0
 }
 //--------------------------------------DECLARATION OF GAMEDATA VARIABLES--------------------------------------
 
@@ -61,7 +62,9 @@ function workShift() {
     if (gameData.shiftsRemaining == 0) {
         const randomJobTitle = jobTitles[Math.floor(Math.random() * jobTitles.length)];
         document.getElementById("jobTitle").innerHTML = randomJobTitle;
-        shiftsRemaining += (60 * 2)
+        gameData.shiftsRemaining = (60 * 2) * gameData.promotionTracker;
+        document.getElementById("shiftsRemaining").innerHTML = gameData.shiftsRemaining.toString();
+        gameData.promotionTracker++;
     }
     document.getElementById("currentWealth").innerHTML = gameData.wealth.toString();
     document.getElementById("shiftsRemaining").innerHTML = gameData.shiftsRemaining.toString();
