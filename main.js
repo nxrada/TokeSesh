@@ -70,6 +70,10 @@ var buttonPermissionLoop = window.setInterval(function() {
         document.getElementById("rollOne").removeAttribute("disabled");
     }
 }, 250)
+//Loop which disables/enables buttons
 
+function autoToker(){
+    
+}
 var savegame = JSON.parse(localStorage.getItem("tokeSeshSave"))
 //Savegame variable.
