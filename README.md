@@ -9,4 +9,4 @@
       - Established a dictatorship of the proletariat. 
   - # Beta Version 1.1.1
     - Changelog:
-      - Changed the image from mj leaf to pothead. 
+      - Changed the image from marijuana leaf to pothead. 
