@@ -9,3 +9,7 @@
   - # Beta Version 1.1.1 -- 2/20/2020 @ 8:20 PM EST
     - Changelog:
       - Changed the image from marijuana leaf to pothead. 
+  - # Beta Version 1.1.2 -- 2/20/2020 @ 8:48 PM EST
+    - Changelog:
+      - Decreased the amout of marijuana you can buy. 
+
