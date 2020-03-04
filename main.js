@@ -188,8 +188,3 @@ var autoTokeLoop = window.setInterval(function() {
 
 var savegame = JSON.parse(localStorage.getItem("tokeSeshSave"))
 //--------------------------------------SAVEGAME VARIABLE--------------------------------------
-
-if (savegame !== null) {
-    gameData = savegame;
-}
-//--------------------------------------SAVEGAME ACTIVATOR--------------------------------------
