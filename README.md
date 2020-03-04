@@ -6,10 +6,16 @@
       - Added function loop for button permissions.
       - Actually made the game the game. 
       - Established a dictatorship of the proletariat. 
-  - # Beta Version 1.1.1 -- 2/20/2020 @ 8:20 PM EST
+  - # Beta Version 1.1.1 -- 2/29/2020 @ 8:20 PM EST
     - Changelog:
       - Changed the image from marijuana leaf to pothead. 
-  - # Beta Version 1.1.2 -- 2/20/2020 @ 8:48 PM EST
+  - # Beta Version 1.1.2 -- 2/29/2020 @ 8:48 PM EST
     - Changelog:
       - Decreased the amout of marijuana you can buy. 
-
+ # Beta Version 2.0 -- 3/3/2020 @ 7:24 PM EST
+    - Changelog:
+      - New job titles.
+      - Victory condition
+      - Changed prices
+      - Removed savegames
+      - 
