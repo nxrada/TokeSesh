@@ -11,16 +11,17 @@
             
         </style>
         <div id="counter">
-            <h1>Tokes: <span id="tokesTaken">0</span></h1>
+            <h1 id="victoryBanner">Tokes: <span id="tokesTaken">0</span></h1>
             <button id="takeAToke"; onclick="takeAToke()">Take a Toke</button> <button id="rollOne"; onclick="rollOne()">Roll</button>
-            <p id="tokesRemaining"></p>
             <p>Joints: <span id="jointCounter">0</span></p>
+            <p>Tokers: <span id="autoTokeCount">0</span></p>
             <script src="main.js"; charset="utf-8"></script>
         </div>
         <br>
         <div id="finanaces">
             <b>Finances</b>
             <hr>
+            <button id="buyAutoToke"; onclick="buyAutoToker()">Hire Toker</button><i> Cost: <span id=autoTokeCost>4</span> joints</i>
             <p>Current wealth: $<span id="currentWealth">0</span></p>
             <script src="main.js"; charset="utf-8"></script>
         </div>
@@ -37,8 +38,8 @@
             <b>Career</b>
             <hr>
             <button id="findJob"; onclick="findJob()">Find a Job</button> <button id="workShift"; onclick="workShift()">Work a Shift</button>
-            <p id="jobTitleDisplay">Job title: <span id = "jobTitle"></span></p>
-            <p id="shiftsRemainingDisplay">Shifts 'till promotion: <span id="shiftsRemaining">60</span></p>
+            <p>Job title: <span id = "jobTitle"></span></p>
+            <p>Shifts 'till promotion: <span id="shiftsRemaining">10</span></p>
             <script src="main.js"; charset="utf-8"></script>
         </div>
         <script src="main.js"; charset="utf-8"></script>
