@@ -13,7 +13,7 @@
     - Changelog:
       - Decreased the amout of marijuana you can buy. 
  # Beta Version 2.0 -- 3/3/2020 @ 7:24 PM EST
-    - Changelog:
+    - Changeloge:
       - New job titles.
       - Victory condition
       - Changed prices
