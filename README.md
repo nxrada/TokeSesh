@@ -1,21 +1,26 @@
 # Toke Sesh, a game by nxrada
 - Work in progress
+  - Stage: Alpha
 - Hosted at: https://nxrada.github.io/TokeSesh/
-  - # Beta Version 1.1.0 -- 2/29/2020  @ 6:00 PM EST
+  - # Pre-Alpha Version 1.0.1 -- 2/29/2020  @ 6:00 PM EST
     - Changelog:
       - Added function loop for button permissions.
       - Actually made the game the game. 
       - Established a dictatorship of the proletariat. 
-  - # Beta Version 1.1.1 -- 2/29/2020 @ 8:20 PM EST
+  - # Pre-Alpha Version 1.0.2 -- 2/29/2020 @ 8:20 PM EST
     - Changelog:
       - Changed the image from marijuana leaf to pothead. 
-  - # Beta Version 1.1.2 -- 2/29/2020 @ 8:48 PM EST
+  - # Pre-Alpha Version 1.0.3 -- 2/29/2020 @ 8:48 PM EST
     - Changelog:
-      - Decreased the amout of marijuana you can buy. 
- # Beta Version 2.0 -- 3/3/2020 @ 7:24 PM EST
+      - Decreased the amout of marijuana you can buy.
+  - # Pre-Alpha Version 1.1.0 -- 3/3/2020 @ 7:24 PM EST
     - Changeloge:
       - New job titles.
       - Victory condition
       - Changed prices
       - Removed savegames
-      - 
+  - # Alpha Version 1.0.1 -- 11/11/2020 @ 11:33 AM EST
+    - Changelog:
+      - Near-complete overhaul of HTML and JS source code. 
+      - Addition of CSS and complete graphic overhaul. 
+      - So much was changed its not even worth mentioning; however, gameplay is identical to pre-alpha. 
